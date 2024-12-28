@@ -2,7 +2,7 @@
 FROM php:8.2-apache
 
 # Copy the PHP script into the container
-COPY redirect.php /var/www/html/redirect.php
+COPY index.php /var/www/html/
 
 # Set the correct permissions
 RUN chown -R www-data:www-data /var/www/html && \
